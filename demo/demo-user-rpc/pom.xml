@@ -20,12 +20,10 @@
         <dependency>
             <groupId>com.ddm</groupId>
             <artifactId>demo-proto</artifactId>
-            <!-- 同模块内依赖：版本由父 POM 的 <revision> 管理 -->
         </dependency>
         <dependency>
             <groupId>com.ddm</groupId>
-            <artifactId>argus</artifactId>
-            <!-- 跨模块依赖：版本由根 POM 的 dependencyManagement 管理 -->
+            <artifactId>argus-spring-boot-starter</artifactId>
         </dependency>
 
         <!-- ==================== Spring Boot ==================== -->

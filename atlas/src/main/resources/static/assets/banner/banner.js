@@ -56,11 +56,11 @@
         const isIndexPage = currentPath === '/' || 
                            currentPath === '/index.html' || 
                            currentPath.endsWith('/index.html') ||
-                           (currentPath.endsWith('/') && currentPath.length <= 1);
+                           (currentPath.endsWith('/') && currentPath.split('/').filter(Boolean).length <= 1);
         if (!isIndexPage) {
             homeButtonHtml = `
                 <div class="atlas-banner__quick-links">
-                    <a class="atlas-banner__quick-btn" href="/index.html">
+                    <a class="atlas-banner__quick-btn" href="index.html">
                         <span class="atlas-banner__quick-icon">⌂</span>
                         <span>返回首页</span>
                     </a>

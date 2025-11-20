@@ -20,10 +20,10 @@
 
         <!-- 模块版本（注意：各模块版本由各自的 <revision> 管理） -->
         <flatten.mode>resolveCiFriendliesOnly</flatten.mode>
-        <chaos.version>1.0-SNAPSHOT</chaos.version>
-        <argus.version>1.0-SNAPSHOT</argus.version>
-        <atlas.version>1.0-SNAPSHOT</atlas.version>
-        <demo.version>1.0-SNAPSHOT</demo.version>
+        <chaos.version>1.0.0-SNAPSHOT</chaos.version>
+        <argus.version>1.0.0-SNAPSHOT</argus.version>
+        <atlas.version>1.0.0-SNAPSHOT</atlas.version>
+        <demo.version>1.0.0-SNAPSHOT</demo.version>
 
         <!-- 第三方依赖版本 -->
         <slf4j.version>2.0.9</slf4j.version>
@@ -63,7 +63,7 @@
             </dependency>
             <dependency>
                 <groupId>com.ddm</groupId>
-                <artifactId>argus</artifactId>
+                <artifactId>argus-spring-boot-starter</artifactId>
                 <version>${argus.version}</version>
             </dependency>
             <dependency>
@@ -208,6 +208,11 @@
                     <version>1.6.0</version>
                     <configuration>
                         <flattenMode>${flatten.mode}</flattenMode>
+                        <updatePomFile>true</updatePomFile>
+                        <pomElements>
+                            <dependencies>flatten</dependencies>
+                            <dependencyManagement>flatten</dependencyManagement>
+                        </pomElements>
                     </configuration>
                     <executions>
                         <execution>

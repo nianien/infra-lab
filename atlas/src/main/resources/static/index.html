@@ -545,56 +545,56 @@
             }
         }
     </style>
-    <link rel="stylesheet" href="/assets/banner/banner.css">
+    <link rel="stylesheet" href="assets/banner/banner.css">
 </head>
 <body>
     <div id="atlas-banner"></div>
 
     <div class="container">
         <div class="components-grid">
-            <a href="/config.html" class="component-card config-center">
+            <a href="config.html" class="component-card config-center">
                 <div class="component-icon">⚙️</div>
                 <div class="component-title">配置中心</div>
                 <div class="component-desc">统一管理应用配置，支持多环境、多命名空间配置管理</div>
             </a>
 
-            <a href="/service-discovery.html" class="component-card service-discovery">
+            <a href="service-discovery.html" class="component-card service-discovery">
                 <div class="component-icon">🔍</div>
                 <div class="component-title">服务发现</div>
                 <div class="component-desc">服务注册与发现，动态管理服务实例，支持健康检查</div>
             </a>
 
-            <a href="/tracing.html" class="component-card tracing">
+            <a href="tracing.html" class="component-card tracing">
                 <div class="component-icon">🔗</div>
                 <div class="component-title">链路追踪</div>
                 <div class="component-desc">分布式系统调用链追踪，可视化服务依赖关系</div>
             </a>
 
-            <a href="/traffic-coloring.html" class="component-card traffic-coloring">
+            <a href="traffic-coloring.html" class="component-card traffic-coloring">
                 <div class="component-icon">🎨</div>
                 <div class="component-title">流量染色</div>
                 <div class="component-desc">流量标记和路由，支持灰度发布和A/B测试</div>
             </a>
 
-            <a href="/logging.html" class="component-card logging">
+            <a href="logging.html" class="component-card logging">
                 <div class="component-icon">📝</div>
                 <div class="component-title">日志中心</div>
                 <div class="component-desc">集中收集、查询和分析应用日志，快速定位问题</div>
             </a>
 
-            <a href="/gateway.html" class="component-card gateway">
+            <a href="gateway.html" class="component-card gateway">
                 <div class="component-icon">🚪</div>
                 <div class="component-title">API 网关</div>
                 <div class="component-desc">统一入口管理，路由转发、限流、鉴权等功能</div>
             </a>
 
-            <a href="/sso.html" class="component-card sso">
+            <a href="sso.html" class="component-card sso">
                 <div class="component-icon">🔐</div>
                 <div class="component-title">SSO 登录</div>
                 <div class="component-desc">单点登录服务，统一身份认证，支持多系统免密登录</div>
             </a>
 
-            <a href="/permission.html" class="component-card permission">
+            <a href="permission.html" class="component-card permission">
                 <div class="component-icon">🛡️</div>
                 <div class="component-title">权限中心</div>
                 <div class="component-desc">统一权限管理，角色授权，细粒度权限控制</div>
@@ -693,8 +693,8 @@
     </div>
 
 
-    <script src="/assets/banner/banner.js"></script>
-    <script src="/assets/js/auth.js"></script>
+    <script src="assets/banner/banner.js"></script>
+    <script src="assets/js/auth.js"></script>
     <script>
         initAtlasBanner('atlas-banner', {
             title: 'Atlas 基础架构平台',
@@ -887,7 +887,7 @@
             }
 
             try {
-                const response = await fetch('/api/auth/login', {
+                const response = await fetch('api/auth/login', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ username, password })
@@ -991,7 +991,7 @@
             }
 
             try {
-                const response = await fetch('/api/auth/change-password', {
+                const response = await fetch('api/auth/change-password', {
                     method: 'POST',
                     headers: getRequestHeaders(),
                     body: JSON.stringify({

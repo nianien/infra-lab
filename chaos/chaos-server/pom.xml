@@ -23,8 +23,7 @@
         </dependency>
         <dependency>
             <groupId>com.ddm</groupId>
-            <artifactId>argus</artifactId>
-            <!-- 跨模块依赖：版本由根 POM 的 dependencyManagement 管理 -->
+            <artifactId>argus-spring-boot-starter</artifactId>
         </dependency>
 
         <!-- ==================== Spring Boot ==================== -->
